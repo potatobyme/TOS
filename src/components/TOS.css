@@ -1,72 +1,75 @@
-/* General Styles for the TOS Page */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    margin: 0;
-    padding: 0;
+/* TOS.css */
+
+.tos-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  color: #333;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.tos-header {
+  font-size: 2rem;
+  color: #4a90e2;
+  text-align: center;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
 }
 
-/* Title and Headers */
-h1, h2, h3 {
-    color: #4CAF50;
+.tos-container p {
+  line-height: 1.6;
+  font-size: 1rem;
+  margin: 10px 0;
 }
 
-h1 {
-    text-align: center;
-    font-size: 2.5rem;
+.tos-container ul {
+  margin: 10px 0 20px 20px;
+  list-style-type: disc;
 }
 
-h2 {
-    font-size: 2rem;
-    margin-top: 30px;
+.tos-container ul li {
+  margin: 5px 0;
 }
 
-h3 {
-    font-size: 1.5rem;
-    margin-top: 20px;
+.tos-container h2 {
+  font-size: 1.5rem;
+  color: #4a90e2;
+  margin-top: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
 }
 
-/* Paragraph Styles */
-p {
-    line-height: 1.6;
-    margin-bottom: 15px;
+.tos-container strong {
+  font-weight: bold;
 }
 
-ul {
-    margin-left: 20px;
+.tos-container a {
+  color: #4a90e2;
+  text-decoration: none;
 }
 
-li {
-    margin-bottom: 10px;
+.tos-container a:hover {
+  text-decoration: underline;
 }
 
-/* Footer Style */
-.footer {
-    text-align: center;
-    margin-top: 40px;
-    padding: 20px;
-    font-size: 1rem;
-    color: #888;
-    background-color: #f1f1f1;
-    border-top: 1px solid #ddd;
-}
+@media screen and (max-width: 768px) {
+  .tos-container {
+    padding: 15px;
+  }
 
-/* Links */
-a {
-    color: #4CAF50;
-    text-decoration: none;
-}
+  .tos-header {
+    font-size: 1.8rem;
+  }
 
-a:hover {
-    text-decoration: underline;
+  .tos-container h2 {
+    font-size: 1.3rem;
+  }
+
+  .tos-container p {
+    font-size: 0.9rem;
+  }
 }
